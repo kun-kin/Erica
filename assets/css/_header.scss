@@ -1,0 +1,258 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+    transition: background .3s ease;
+    &-main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-basis: auto;
+        flex-shrink: 1;
+        flex-grow: 1;
+        align-self: auto;
+        padding: 30px 0;
+        .menu {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            .close-mobile-menu {
+                @media(min-width: 992px) {
+                    display: none;
+                }
+            }
+            ul {
+                li {
+                    a {
+                        font-size: 1.8rem;
+                        color: #fff;
+                        &:hover {
+                            color: var(--second-color);
+                        }
+                    }
+                }
+            }
+            &>ul {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                &>li {
+                    position: relative;
+                    &>a {
+                        margin: 0 25px;
+                    }
+                    .submenu {
+                        position: absolute;
+                        left: 0;
+                        top: -999em;
+                        visibility: hidden;
+                        z-index: 999;
+                        width: 200px;
+                        background: #fff;
+                        opacity: 0;
+                        transform: translateY(20px);
+                        transition: transform .2s, opacity .2s;
+                        transition-timing-function: cubic-bezier(.17, .67, .83, .67);
+                        padding: 15px;
+                        li {
+                            a {
+                                display: flex;
+                                align-items: center;
+                                padding: 5px 10px;
+                                margin: 0;
+                                color: var(--global-color);
+                                &:hover {
+                                    color: var(--second-color);
+                                }
+                            }
+                        }
+                    }
+                    &:hover {
+                        .submenu {
+                            top: 100%;
+                            opacity: 1;
+                            visibility: visible;
+                            transform: translateY(0);
+                            transition: transform .2s, opacity .2s;
+                            transition-timing-function: cubic-bezier(.17, .67, .83, .67);
+                        }
+                    }
+                }
+            }
+            @media(max-width:991px) {
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 9999;
+                transform: translateX(-100%);
+                max-width: 100%;
+                width: 350px;
+                height: 100vh;
+                transition: transform .2s cubic-bezier(.35, .19, .45, .91);
+                will-change: transform;
+                overflow-y: auto;
+                &.opened {
+                    transform: translate(0);
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    background-color: #fff;
+                    padding: 80px 25px 80px 40px;
+                    ul {
+                        li {
+                            a {
+                                color: var(--global-color);
+                                display: block;
+                                margin: 0;
+                                padding: 10px 0 10px 0;
+                                &.active {
+                                    color: var(--second-color);
+                                }
+                            }
+                        }
+                    }
+                    &>ul {
+                        display: block;
+                        width: 100%;
+                        &>li {
+                            &.has-children {
+                                &::before {
+                                    content: "\f063";
+                                    position: absolute;
+                                    top: 10px;
+                                    right: 0;
+                                    font-size: 20px;
+                                    z-index: 1;
+                                    color: var(--second-color);
+                                    font-family: fontawesome;
+                                }
+                                .submenu {
+                                    position: relative;
+                                    top: 100%;
+                                    transform: translate(0);
+                                    width: 100%;
+                                    padding: 0;
+                                    display: none;
+                                    &.opened {
+                                        display: block;
+                                        opacity: 1;
+                                        visibility: visible;
+                                        li {
+                                            a {
+                                                color: var(--global-type-color);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .close-mobile-menu {
+                    position: absolute;
+                    top: 15px;
+                    right: 15px;
+                    font-size: 35px;
+                    display: block;
+                }
+                .booking {
+                    display: none;
+                }
+            }
+        }
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            @media(min-width: 992px) {
+                display: none;
+            }
+        }
+        .booking {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.4em;
+            padding: 12px 30px 12px 30px;
+            border-radius: 25px 25px 25px 25px;
+            text-transform: capitalize;
+            &:hover {
+                background-color: #000000;
+                color: #fff;
+            }
+            @media(max-width:767.98px) {
+                padding: 6px 15px;
+            }
+        }
+        .toggle-menu {
+            color: var(--global-color);
+            width: 32px;
+            height: 32px;
+            font-size: 32px;
+            cursor: pointer;
+            .mobile-triggle {
+                &-open {
+                    display: block;
+                    color: #fff;
+                }
+                &-close {
+                    display: none;
+                }
+            }
+            &.active {
+                .mobile-triggle {
+                    &-open {
+                        display: none;
+                    }
+                    &-close {
+                        display: block;
+                        color: #fff;
+                    }
+                }
+            }
+            svg {
+                display: block;
+                vertical-align: middle;
+            }
+            &:hover {
+                &>* {
+                    color: var(--second-color);
+                }
+            }
+        }
+    }
+    &:not(.fixed) {
+        .logo-n {
+            display: none;
+        }
+        .logo-t {
+            display: block;
+        }
+    }
+    &.fixed {
+        background-color: #fff;
+        box-shadow: 0 0 10px 0 #0000001a;
+        transition: background .3s ease;
+        .logo-n {
+            display: block;
+        }
+        .logo-t {
+            display: none;
+        }
+        .menu {
+            ul {
+                li {
+                    a {
+                        color: var(--global-color);
+                        &:hover {
+                            color: var(--second-color);
+                        }
+                    }
+                }
+            }
+        }
+        .header-main .toggle-menu .mobile-triggle-open {
+            color: var(--global-color);
+        }
+    }
+}

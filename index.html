@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erica</title>
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css">
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.1/swiper-bundle.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.css" />
+
+    <link rel="stylesheet" href="./assets/css/animation.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="canonical" href="https://wowjs.uk/">
+
+</head>
+
+<body id="">
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header-main">
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="./assets/images/logo.svg" alt="" class="logo-n">
+                            <img src="./assets/images/logo-white.svg" alt="" class="logo-t">
+                        </a>
+                    </div>
+                    <nav class="menu">
+                        <div class="close-mobile-menu">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300" class="lakit-font-icon-svg" data-icon-name="e-remove" data-icon-type="LaStudioIcons"><path d="M53.7 53.7c-4.5 4.2-8.1 8.4-8.1 9s19.5 20.4 43.2 44.1l42.9 43.2-42.9 43.2c-23.7 23.4-43.2 43.5-43.2 44.1 0 1.5 15.6 17.1 17.1 17.1.6 0 20.7-19.5 44.1-43.2l43.2-42.9 43.8 43.5 43.5 43.8 8.4-8.7c4.8-4.8 8.7-9 8.7-9.6s-19.5-20.7-43.2-44.1L168.3 150l42.9-43.2c23.7-23.7 43.2-43.5 43.2-44.1 0-1.5-15.6-17.1-17.1-17.1-.6 0-20.4 19.5-44.1 43.2L150 131.7l-43.2-42.9C83.4 65.1 63.3 45.6 62.7 45.6s-4.8 3.6-9 8.1" fill="currentColor"></path></svg>
+                        </div>
+                        <ul>
+                            <li class="menu-item">
+                                <a href="./index.html" class="menu-link">Home</a>
+                            </li>
+                            <li class="menu-item has-children">
+                                <a href="javascript:;" class="menu-link">
+                                    Page
+                                </a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="./about.html" class="menu-link">About us</a>
+                                    </li>
+                                    <li>
+                                        <a href="./contact.html" class="menu-link">Contact us</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="./about.html" class="menu-link">About us</a>
+                            </li>
+                            <li>
+                                <a href="./menus.html" class="menu-link">Menus</a>
+                            </li>
+                            <li>
+                                <a href="./blogs.html" class="menu-link">Blog</a>
+                            </li>
+                            <li>
+                                <a href="./contact.html" class="menu-link">Contact us</a>
+                            </li>
+                        </ul>
+                        <a href="" class="booking">Book a table</a>
+                    </nav>
+                    <div class="nav-right">
+                        <a href="" class="booking">Book a table</a>
+                        <div class="toggle-menu">
+                            <span class="mobile-triggle-open">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 32 32"><path fill="currentColor" d="M25 7c.6 0 1-.4 1-1s-.4-1-1-1H7c-.6 0-1 .4-1 1s.4 1 1 1h18ZM25 27c.6 0 1-.4 1-1s-.4-1-1-1H7c-.6 0-1 .4-1 1s.4 1 1 1h18Z" opacity=".5"></path><path fill="currentColor" d="M29 15H3c-.6 0-1 .4-1 1s.4 1 1 1h26c.6 0 1-.4 1-1s-.4-1-1-1Z"></path></svg>
+                            </span>
+                            <span class="mobile-triggle-close">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300" class="lakit-font-icon-svg" data-icon-name="e-remove" data-icon-type="LaStudioIcons"><path d="M53.7 53.7c-4.5 4.2-8.1 8.4-8.1 9s19.5 20.4 43.2 44.1l42.9 43.2-42.9 43.2c-23.7 23.4-43.2 43.5-43.2 44.1 0 1.5 15.6 17.1 17.1 17.1.6 0 20.7-19.5 44.1-43.2l43.2-42.9 43.8 43.5 43.5 43.8 8.4-8.7c4.8-4.8 8.7-9 8.7-9.6s-19.5-20.7-43.2-44.1L168.3 150l42.9-43.2c23.7-23.7 43.2-43.5 43.2-44.1 0-1.5-15.6-17.1-17.1-17.1-.6 0-20.4 19.5-44.1 43.2L150 131.7l-43.2-42.9C83.4 65.1 63.3 45.6 62.7 45.6s-4.8 3.6-9 8.1" fill="currentColor"></path></svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="banner">
+                <div class="banner-slide">
+                    <div class="shape-bottom">
+                        <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1920 128">
+<path class="elementor-shape-fill" fill="red" d="M1729.51 1.148c-11.5.846-33.08 2.66-42.5 3.572-20.73 2.004-82.14 11.027-110 16.164a967 967 0 0 1-17 2.942c-4.68.757-15.25 2.58-23.5 4.053-13.17 2.35-25.71 4.295-49.5 7.683-15.54 2.21-41.38 5.99-45.51 5.989 0 0 67.17 17.346 100.82 23.803 73.77 14.156 149.61 17.291 232.19 9.599 48.21-4.492 85.88-10.554 127.49-21.402L1920.01 49V24.579l-8.25-4.093c-19.23-9.54-53.44-16.155-99.75-19.286-15.95-1.079-68.12-1.111-82.5-.052ZM985.504 5.71c-20.278 1.25-48.742 4.538-66.5 7.682-7.742 1.371-71.656 14.214-84.501 16.98-7.179 1.547-32.167 6.129-47.554 8.72-9.232 1.554-36.313 4.685-51.946 6.005-10.175.86-20.975 1.78-24 2.045-3.025.267-19.9 1.007-37.5 1.645-47.411 1.72-108.01.414-194.001-4.182-147.441-7.88-165.263-8.48-230.834-7.783-54.89.584-74.487 1.681-113.41 6.35C91.538 48.417 59.032 55.64 28.5 66.893c-8.227 3.033-19.368 10.21-24.355 15.693L0 87.142v40.909s12.95-3.375 24.5-6.895c56.626-17.259 119.495-30.41 186.001-38.907 62.035-7.926 104.5-10.633 166.5-10.615 49.061.014 70.59 1.109 137.501 6.992 139.446 12.261 185.836 13.47 248.001 6.464C803.628 80.455 822 76.5 907.004 54.25 987 33.31 1003 30.985 1039.5 25.55c21.5-3.2 52-6.55 68.5-7.55l27-1.45s-52.82-7.846-69.5-9.437c-11.16-1.065-69.022-2.08-79.996-1.402Z"></path>
+<path class="elementor-shape-fill elementor-shape-fill2" fill="#fff" d="M1103 18c-56.33 4.739-90.64 10.64-135.813 20.903-10.901 2.477-37.628 9.201-59.394 14.944C832.048 73.83 804.228 79.67 763.027 84.239c-62.28 6.903-108.755 5.712-248.458-6.371-67.035-5.797-88.604-6.876-137.754-6.89-62.115-.018-104.658 2.65-166.808 10.46-66.726 8.387-129.33 21.274-186.707 38.435-11.772 3.52-23.3 8.091-23.3 8.091h1920V49l-17 4c-93.36 23.942-203.94 31.254-303.43 20.229-35.09-3.888-68.1-10.21-125.01-23.94L1441.5 41.5l-19.04 1.544c-24.31 2.117-91.33 2.434-112.93.532-18.35-1.616-51.53-5.63-68-8.228C1224.9 32.725 1134.5 16.5 1134.5 16.5s-21.76.68-31.5 1.5Z"></path>
+</svg>
+                    </div>
+                    <div class="swiper bannerSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="item-slide-image">
+                                    <img src="./assets/images/banner1.jpg" alt="">
+                                </div>
+                                <div class="item-slide-content">
+                                    <div class="item-slide-content__inner">
+                                        <div class="item-slide-heading ">
+                                            Seafood
+                                        </div>
+                                        <div class="item-slide-description">
+                                            Heaven
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item-slide-image">
+                                    <img src="./assets/images/banner2.jpg" alt="">
+                                </div>
+                                <div class="item-slide-content">
+                                    <div class="item-slide-content__inner">
+                                        <div class="item-slide-heading">
+                                            We did the
+                                        </div>
+                                        <div class="item-slide-description">
+                                            Fishing for you
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item-slide-image">
+                                    <img src="./assets/images/banner3.jpg" alt="">
+                                </div>
+                                <div class="item-slide-content">
+                                    <div class="item-slide-content__inner">
+                                        <div class="item-slide-heading">
+                                            Served fresh
+                                        </div>
+                                        <div class="item-slide-description">
+                                            And tasty
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 40 40"><path fill="currentColor" d="m31.344 16.676-22.24.524-6.276.152c-1.104.024-1.108 1.74 0 1.716l22.244-.528 6.272-.14c1.104-.036 1.108-1.752 0-1.724Zm6.232-.084A183.669 183.669 0 0 1 26 10.636c-.96-.54-1.828.964-.864 1.484A178.266 178.266 0 0 0 35.6 17.544 66.083 66.083 0 0 0 26 28.188a.868.868 0 0 0 .308 1.176.876.876 0 0 0 1.172-.308A64.089 64.089 0 0 1 37.752 17.94a.863.863 0 0 0-.176-1.348Z"></path></svg>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 40 40"><path fill="currentColor" d="m8.656 16.676 22.24.524 6.276.152c1.104.024 1.108 1.74 0 1.716l-22.244-.528-6.272-.14c-1.104-.036-1.108-1.752 0-1.724Zm-6.232-.084A183.641 183.641 0 0 0 14 10.636c.96-.54 1.828.964.864 1.484A178.266 178.266 0 0 1 4.4 17.544 66.08 66.08 0 0 1 14 28.188a.868.868 0 0 1-.308 1.176.876.876 0 0 1-1.172-.308A64.085 64.085 0 0 0 2.248 17.94a.864.864 0 0 1 .176-1.348Z"></path></svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-md-5">
+                            <div class="heading-title">
+                                <div class="subtitle">
+                                    <span>Seafood</span>
+                                </div>
+                                <div class="sectitle">
+                                    <h2>
+                                        Over the top flavors from under the sea
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="about-content">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis viverra nibh cras pulvinar. Egestas congue quisque egestas diam in arcu. Pretium nibh ipsum consequat nisl vel pretium.
+                                </p>
+                            </div>
+                            <div class="about-button">
+                                <a href="" class="button button-link">Book A Table</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="about-image">
+                                <img src="./assets/images/about-1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="lakit tb-space">
+                <div class="container">
+                    <div class="lakit-wrapper">
+                        <div class="lakit-item">
+                            <div class="lakit-iconbox lakit-iconbox__align-right">
+                                <div class="lakit-iconbox__box-header">
+                                    <div class="lakit-iconbox__box-icon">
+                                        <img src="./assets/images/erica-m3-bg2-a.jpg" alt="" width="460px" height="220px">
+                                    </div>
+                                </div>
+                                <div class="lakit-iconbox__box-body">
+                                    <div class="lakit-iconbox__title">
+                                        01. Shellfish
+                                    </div>
+                                    <div class="lakit-iconbox__desc">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                    </div>
+                                    <div class="lakit-iconbox__button_wrapper enable_hover_btn">
+                                        <a class="button-link button btn-align-icon-right">
+                                            <span class="button-content-wrapper">
+                                                <span class="button-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44"><path fill="currentColor" d="M10.398 9.235h6.961c.911.022.899 1.358 0 1.375H10.4c-8.315.357-8.33 12.751 0 13.114h28.594l-7.856-8.511c-.607-.66.398-1.592 1.011-.933l8.92 9.666c.184.227.26.579.066.825-.13.31-9.209 9.546-9.357 9.783a.688.688 0 0 1-.992-.953l8.164-8.502H10.4C.26 24.668.243 9.675 10.398 9.235Z"></path></svg>
+                                                </span>
+                                            <span class="button-text"></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lakit-divider">
+                                <span class="lakit-divider-separator">
+                                    <div class="lakit-divider-icon lakit-divider-icon__element">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="currentColor" d="M20.456 10.203a11.718 11.718 0 0 1-6.306-3.271 11.708 11.708 0 0 1-3.29-6.43.328.328 0 0 0-.648 0 11.708 11.708 0 0 1-3.29 6.447 11.721 11.721 0 0 1-6.287 3.268.327.327 0 0 0 0 .646 11.72 11.72 0 0 1 6.31 3.272A11.73 11.73 0 0 1 10.2 20.32a.329.329 0 0 0 .646 0 11.763 11.763 0 0 1 9.609-9.472.328.328 0 0 0 .001-.646Zm-6.82 3.46a12.378 12.378 0 0 0-3.113 5.204 12.374 12.374 0 0 0-3.112-5.196 12.352 12.352 0 0 0-5.278-3.132 12.354 12.354 0 0 0 5.253-3.126 12.33 12.33 0 0 0 3.152-5.356 12.33 12.33 0 0 0 3.148 5.339 12.35 12.35 0 0 0 5.26 3.127 12.343 12.343 0 0 0-5.31 3.14Z"></path></svg>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="lakit-item">
+                            <div class="lakit-iconbox lakit-iconbox__align-right">
+                                <div class="lakit-iconbox__box-header">
+                                    <div class="lakit-iconbox__box-icon">
+                                        <img src="./assets/images/erica-m3-bg2-b.jpg" alt="" width="460px" height="220px">
+                                    </div>
+                                </div>
+                                <div class="lakit-iconbox__box-body">
+                                    <div class="lakit-iconbox__title">
+                                        02. Crustaceans
+                                    </div>
+                                    <div class="lakit-iconbox__desc">
+                                        Parturient montes nascetur ridiculus mus.
+                                    </div>
+                                    <div class="lakit-iconbox__button_wrapper enable_hover_btn">
+                                        <a class="button-link button btn-align-icon-right">
+                                            <span class="button-content-wrapper">
+                                                <span class="button-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44"><path fill="currentColor" d="M10.398 9.235h6.961c.911.022.899 1.358 0 1.375H10.4c-8.315.357-8.33 12.751 0 13.114h28.594l-7.856-8.511c-.607-.66.398-1.592 1.011-.933l8.92 9.666c.184.227.26.579.066.825-.13.31-9.209 9.546-9.357 9.783a.688.688 0 0 1-.992-.953l8.164-8.502H10.4C.26 24.668.243 9.675 10.398 9.235Z"></path></svg>
+                                                </span>
+                                            <span class="button-text"></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lakit-divider">
+                                <span class="lakit-divider-separator">
+                                    <div class="lakit-divider-icon lakit-divider-icon__element">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="currentColor" d="M20.456 10.203a11.718 11.718 0 0 1-6.306-3.271 11.708 11.708 0 0 1-3.29-6.43.328.328 0 0 0-.648 0 11.708 11.708 0 0 1-3.29 6.447 11.721 11.721 0 0 1-6.287 3.268.327.327 0 0 0 0 .646 11.72 11.72 0 0 1 6.31 3.272A11.73 11.73 0 0 1 10.2 20.32a.329.329 0 0 0 .646 0 11.763 11.763 0 0 1 9.609-9.472.328.328 0 0 0 .001-.646Zm-6.82 3.46a12.378 12.378 0 0 0-3.113 5.204 12.374 12.374 0 0 0-3.112-5.196 12.352 12.352 0 0 0-5.278-3.132 12.354 12.354 0 0 0 5.253-3.126 12.33 12.33 0 0 0 3.152-5.356 12.33 12.33 0 0 0 3.148 5.339 12.35 12.35 0 0 0 5.26 3.127 12.343 12.343 0 0 0-5.31 3.14Z"></path></svg>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="lakit-item">
+                            <div class="lakit-iconbox lakit-iconbox__align-right">
+                                <div class="lakit-iconbox__box-header">
+                                    <div class="lakit-iconbox__box-icon">
+                                        <img src="./assets/images/erica-m3-bg2-c.jpg" alt="" width="460px" height="220px">
+                                    </div>
+                                </div>
+                                <div class="lakit-iconbox__box-body">
+                                    <div class="lakit-iconbox__title">
+                                        03. Mollusks
+                                    </div>
+                                    <div class="lakit-iconbox__desc">
+                                        Nisi est sit amet facilisis magna etiam tempor.
+                                    </div>
+                                    <div class="lakit-iconbox__button_wrapper enable_hover_btn">
+                                        <a class="button-link button btn-align-icon-right">
+                                            <span class="button-content-wrapper">
+                                                <span class="button-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44"><path fill="currentColor" d="M10.398 9.235h6.961c.911.022.899 1.358 0 1.375H10.4c-8.315.357-8.33 12.751 0 13.114h28.594l-7.856-8.511c-.607-.66.398-1.592 1.011-.933l8.92 9.666c.184.227.26.579.066.825-.13.31-9.209 9.546-9.357 9.783a.688.688 0 0 1-.992-.953l8.164-8.502H10.4C.26 24.668.243 9.675 10.398 9.235Z"></path></svg>
+                                                </span>
+                                            <span class="button-text"></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lakit-divider">
+                                <span class="lakit-divider-separator">
+                                    <div class="lakit-divider-icon lakit-divider-icon__element">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="currentColor" d="M20.456 10.203a11.718 11.718 0 0 1-6.306-3.271 11.708 11.708 0 0 1-3.29-6.43.328.328 0 0 0-.648 0 11.708 11.708 0 0 1-3.29 6.447 11.721 11.721 0 0 1-6.287 3.268.327.327 0 0 0 0 .646 11.72 11.72 0 0 1 6.31 3.272A11.73 11.73 0 0 1 10.2 20.32a.329.329 0 0 0 .646 0 11.763 11.763 0 0 1 9.609-9.472.328.328 0 0 0 .001-.646Zm-6.82 3.46a12.378 12.378 0 0 0-3.113 5.204 12.374 12.374 0 0 0-3.112-5.196 12.352 12.352 0 0 0-5.278-3.132 12.354 12.354 0 0 0 5.253-3.126 12.33 12.33 0 0 0 3.152-5.356 12.33 12.33 0 0 0 3.148 5.339 12.35 12.35 0 0 0 5.26 3.127 12.343 12.343 0 0 0-5.31 3.14Z"></path></svg>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="lakit-item">
+                            <div class="lakit-iconbox lakit-iconbox__align-right">
+                                <div class="lakit-iconbox__box-header">
+                                    <div class="lakit-iconbox__box-icon">
+                                        <img src="./assets/images/erica-m3-bg2-d.jpg" alt="" width="460px" height="220px">
+                                    </div>
+                                </div>
+                                <div class="lakit-iconbox__box-body">
+                                    <div class="lakit-iconbox__title">
+                                        04. shrimp
+                                    </div>
+                                    <div class="lakit-iconbox__desc">
+                                        Interdum varius sit amet mattis vulputate enim nulla aliquet.
+                                    </div>
+                                    <div class="lakit-iconbox__button_wrapper enable_hover_btn">
+                                        <a class="button-link button btn-align-icon-right">
+                                            <span class="button-content-wrapper">
+                                                <span class="button-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44"><path fill="currentColor" d="M10.398 9.235h6.961c.911.022.899 1.358 0 1.375H10.4c-8.315.357-8.33 12.751 0 13.114h28.594l-7.856-8.511c-.607-.66.398-1.592 1.011-.933l8.92 9.666c.184.227.26.579.066.825-.13.31-9.209 9.546-9.357 9.783a.688.688 0 0 1-.992-.953l8.164-8.502H10.4C.26 24.668.243 9.675 10.398 9.235Z"></path></svg>
+                                                </span>
+                                            <span class="button-text"></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lakit-divider">
+                                <span class="lakit-divider-separator">
+                                    <div class="lakit-divider-icon lakit-divider-icon__element">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="currentColor" d="M20.456 10.203a11.718 11.718 0 0 1-6.306-3.271 11.708 11.708 0 0 1-3.29-6.43.328.328 0 0 0-.648 0 11.708 11.708 0 0 1-3.29 6.447 11.721 11.721 0 0 1-6.287 3.268.327.327 0 0 0 0 .646 11.72 11.72 0 0 1 6.31 3.272A11.73 11.73 0 0 1 10.2 20.32a.329.329 0 0 0 .646 0 11.763 11.763 0 0 1 9.609-9.472.328.328 0 0 0 .001-.646Zm-6.82 3.46a12.378 12.378 0 0 0-3.113 5.204 12.374 12.374 0 0 0-3.112-5.196 12.352 12.352 0 0 0-5.278-3.132 12.354 12.354 0 0 0 5.253-3.126 12.33 12.33 0 0 0 3.152-5.356 12.33 12.33 0 0 0 3.148 5.339 12.35 12.35 0 0 0 5.26 3.127 12.343 12.343 0 0 0-5.31 3.14Z"></path></svg>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="menu-delicious">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-md-5">
+                            <div class="menu-delicious-image">
+                                <img src="./assets/images/menu-bg.jpg" alt="" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="menu-delicious-content">
+                                <div class="bg-head-dt">
+                                    <img src="./assets/images/logo-white.svg" alt="">
+                                </div>
+                                <div class="heading-title">
+                                    <div class="subtitle">
+                                        <span>Menu</span>
+                                    </div>
+                                    <div class="sectitle">
+                                        <h2>
+                                            Your choice for your next delicious meal
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="menu-delicious-list">
+                                    <ul class="lakit-price-list">
+                                        <li class="price-list__item">
+                                            <div class="price-list__item-inner">
+                                                <div class="price-list__item-content">
+                                                    <div class="price-list__item-title__wrapper">
+                                                        <div class="price-list__item-title h4 theme-heading">Crawfish Pistolettes</div>
+                                                    </div>
+                                                    <div class="price-list__item-desc">Butter, Onions, Bell Pepper, Garlic, Minced, Milk, Crawfish, Black Pepper, Cajun Seasoning, Vegetable Oil</div>
+                                                </div>
+                                                <div class="price-list__item-price">$15.00</div>
+                                            </div>
+                                        </li>
+                                        <li class="price-list__item">
+                                            <div class="price-list__item-inner">
+                                                <div class="price-list__item-content">
+                                                    <div class="price-list__item-title__wrapper">
+                                                        <div class="price-list__item-title h4 theme-heading">Crawfish Pistolettes</div>
+                                                    </div>
+                                                    <div class="price-list__item-desc">Butter, Onions, Bell Pepper, Garlic, Minced, Milk, Crawfish, Black Pepper, Cajun Seasoning, Vegetable Oil</div>
+                                                </div>
+                                                <div class="price-list__item-price">$15.00</div>
+                                            </div>
+                                        </li>
+                                        <li class="price-list__item">
+                                            <div class="price-list__item-inner">
+                                                <div class="price-list__item-content">
+                                                    <div class="price-list__item-title__wrapper">
+                                                        <div class="price-list__item-title h4 theme-heading">Crawfish Pistolettes</div>
+                                                    </div>
+                                                    <div class="price-list__item-desc">Butter, Onions, Bell Pepper, Garlic, Minced, Milk, Crawfish, Black Pepper, Cajun Seasoning, Vegetable Oil</div>
+                                                </div>
+                                                <div class="price-list__item-price">$15.00</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-between flex-md-row-reverse">
+                        <div class="col-md-5">
+                            <div class="menu-delicious-image">
+                                <img src="./assets/images/menu-bg.jpg" alt="" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="menu-delicious-content">
+                                <div class="bg-head-dt">
+                                    <img src="./assets/images/logo-white.svg" alt="">
+                                </div>
+                                <div class="heading-title">
+                                    <div class="subtitle">
+                                        <span>Menu</span>
+                                    </div>
+                                    <div class="sectitle">
+                                        <h2>
+                                            Your choice for your next delicious meal
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="menu-delicious-list">
+                                    <ul class="lakit-price-list">
+                                        <li class="price-list__item">
+                                            <div class="price-list__item-inner">
+                                                <div class="price-list__item-content">
+                                                    <div class="price-list__item-title__wrapper">
+                                                        <div class="price-list__item-title h4 theme-heading">Crawfish Pistolettes</div>
+                                                    </div>
+                                                    <div class="price-list__item-desc">Butter, Onions, Bell Pepper, Garlic, Minced, Milk, Crawfish, Black Pepper, Cajun Seasoning, Vegetable Oil</div>
+                                                </div>
+                                                <div class="price-list__item-price">$15.00</div>
+                                            </div>
+                                        </li>
+                                        <li class="price-list__item">
+                                            <div class="price-list__item-inner">
+                                                <div class="price-list__item-content">
+                                                    <div class="price-list__item-title__wrapper">
+                                                        <div class="price-list__item-title h4 theme-heading">Crawfish Pistolettes</div>
+                                                    </div>
+                                                    <div class="price-list__item-desc">Butter, Onions, Bell Pepper, Garlic, Minced, Milk, Crawfish, Black Pepper, Cajun Seasoning, Vegetable Oil</div>
+                                                </div>
+                                                <div class="price-list__item-price">$15.00</div>
+                                            </div>
+                                        </li>
+                                        <li class="price-list__item">
+                                            <div class="price-list__item-inner">
+                                                <div class="price-list__item-content">
+                                                    <div class="price-list__item-title__wrapper">
+                                                        <div class="price-list__item-title h4 theme-heading">Crawfish Pistolettes</div>
+                                                    </div>
+                                                    <div class="price-list__item-desc">Butter, Onions, Bell Pepper, Garlic, Minced, Milk, Crawfish, Black Pepper, Cajun Seasoning, Vegetable Oil</div>
+                                                </div>
+                                                <div class="price-list__item-price">$15.00</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bookingtable">
+                <div class="bookingtable-wrap">
+                    <div class="column column-left">
+                        <img src="./assets/images/bookingimg.jpg" alt="" loading="lazy">
+                    </div>
+                    <div class="column column-right">
+                        <div class="bookingtable-form-container">
+                            <form action="" class="bookingtable-form">
+                                <h3 class="bookingtable-form-title">Booking a table</h3>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <select name="" id="" class="form-control">
+                                                <option value="1 person">1 Person</option>
+                                                <option value="2 persons">2 Persons</option>
+                                                <option value="3 persons">3 Persons</option>
+                                                <option value="4 persons">4 Persons</option>
+                                                <option value="5 persons">5 Persons</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="date" class="hasDatepicker form-control" placeholder="dd/mm/YY">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <select name="" id="" class="form-control">
+                                                <option value="10:00 am">10:00 am</option>
+                                                <option value="10:30 am">10:30 am</option>
+                                                <option value="11:00 am">11:00 am</option>
+                                                <option value="11:30 am">11:30 am</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Phone number">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-btn">
+                                            <button type="submit">Book a table</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="testimonials tb-space">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-lg-6 col-md-6 order-2 order-md-1">
+                            <div class="testimonials-bgleft">
+                                <img src="./assets/images/testibg.png" alt="" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-6 order-1 order-md-2">
+                            <div class="testimonials-content">
+                                <div class="heading-title">
+                                    <div class="subtitle">
+                                        <span>Testimonial</span>
+                                    </div>
+                                    <div class="sectitle">
+                                        <h2>What our restaurant patrons say</h2>
+                                    </div>
+                                </div>
+                                <div class="testimonials-list">
+                                    <span class="mask-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" viewBox="0 0 40 30"><path fill="currentColor" d="M0 23.092C0 25.855 5.455 30 8.283 30c.606 0 1.212-.197 1.414-.79 1.212-3.75 8.687-18.355 12.121-23.881-.404-.197-.808-.79-.808-1.184 0-.592-2.222-3.75-3.434-4.145C14.343 0 0 15.987 0 23.092Zm18.182 0c0 2.763 5.454 6.908 8.283 6.908.606 0 1.212-.197 1.414-.79C29.09 25.46 36.566 10.855 40 5.33c-.404-.197-.808-.79-.808-1.184 0-.592-2.222-3.75-3.434-4.145-3.233 0-17.576 15.987-17.576 23.092Z"></path></svg>
+                                    </span>
+                                    <span class="mask-image">
+                                        <img src="./assets/images/mask-image-testi.png" alt="" loading="lazy">
+                                    </span>
+                                    <div class="swiper testimonials-slide">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="testimonials-item">
+                                                    <div class="testimonials-item__comment">
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis viverra nibh cras pulvinar. Egestas congue quisque egestas diam in arcu. Pretium nibh ipsum consequat nisl vel pretium. Imperdiet
+                                                            massa tincidunt nunc pulvinar sapien et. Id faucibus nisl tincidunt eget nullam non nisi.
+                                                        </p>
+                                                    </div>
+                                                    <div class="testimonials-item__title">
+                                                        Dianne Russell
+                                                    </div>
+                                                    <div class="testimonials-item__name">
+                                                        <span>customer reviews</span>
+                                                    </div>
+                                                    <div class="testimonials-item__rating">
+                                                        <span class="star-rating">
+                                                            
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="testimonials-item">
+                                                    <div class="testimonials-item__comment">
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis viverra nibh cras pulvinar. Egestas congue quisque egestas diam in arcu. Pretium nibh ipsum consequat nisl vel pretium. Imperdiet
+                                                            massa tincidunt nunc pulvinar sapien et. Id faucibus nisl tincidunt eget nullam non nisi.
+                                                        </p>
+                                                    </div>
+                                                    <div class="testimonials-item__title">
+                                                        Dianne Russell
+                                                    </div>
+                                                    <div class="testimonials-item__name">
+                                                        <span>customer reviews</span>
+                                                    </div>
+                                                    <div class="testimonials-item__rating">
+                                                        <span class="star-rating">
+
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="testimonials-item">
+                                                    <div class="testimonials-item__comment">
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis viverra nibh cras pulvinar. Egestas congue quisque egestas diam in arcu. Pretium nibh ipsum consequat nisl vel pretium. Imperdiet
+                                                            massa tincidunt nunc pulvinar sapien et. Id faucibus nisl tincidunt eget nullam non nisi.
+                                                        </p>
+                                                    </div>
+                                                    <div class="testimonials-item__title">
+                                                        Dianne Russell
+                                                    </div>
+                                                    <div class="testimonials-item__name">
+                                                        <span>customer reviews</span>
+                                                    </div>
+                                                    <div class="testimonials-item__rating">
+                                                        <span class="star-rating">
+
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="blogs tb-space mb-0">
+                <div class="container">
+                    <div class="heading-title text-center">
+                        <div class="sectitle">
+                            <h2>Latest artice from our blog</h2>
+                        </div>
+                    </div>
+                    <div class="blogs-list">
+                        <div class="swiper blogs-slide">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="blogs-item">
+                                        <div class="blogs-item__inner">
+                                            <div class="blogs-image">
+                                                <a href="./detail-blog.html" class="blogs-image-link">
+                                                    <img src="./assets/images/blogs1.jpg" alt="" loading="lazy">
+                                                </a>
+                                            </div>
+                                            <div class="blogs-content">
+                                                <div class="blogs-content__inner">
+                                                    <h3 class="blogs-content__title">
+                                                        <a href="./detail-blog.html">
+                                                            Eat yourself skinny
+                                                        </a>
+                                                    </h3>
+                                                    <div class="blogs-content__excerpt">
+                                                        Turpis massa tincidunt dui ut ornare lectus sit amet. Hendrerit gravida rutrum quisque non tellus orci ac auctor. Nibh…
+                                                    </div>
+                                                    <div class="blogs-content__more-wrap">
+                                                        <a href="./detail-blog.html" class="button blogs-btn-more">
+                                                            <span>Explore more</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="blogs-item">
+                                        <div class="blogs-item__inner">
+                                            <div class="blogs-image">
+                                                <a href="./detail-blog.html" class="blogs-image-link">
+                                                    <img src="./assets/images/blogs2.jpg" alt="" loading="lazy">
+                                                </a>
+                                            </div>
+                                            <div class="blogs-content">
+                                                <div class="blogs-content__inner">
+                                                    <h3 class="blogs-content__title">
+                                                        <a href="./detail-blog.html">
+                                                            Eat yourself skinny
+                                                        </a>
+                                                    </h3>
+                                                    <div class="blogs-content__excerpt">
+                                                        Turpis massa tincidunt dui ut ornare lectus sit amet. Hendrerit gravida rutrum quisque non tellus orci ac auctor. Nibh…
+                                                    </div>
+                                                    <div class="blogs-content__more-wrap">
+                                                        <a href="./detail-blog.html" class="button blogs-btn-more">
+                                                            <span>Explore more</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="blogs-item">
+                                        <div class="blogs-item__inner">
+                                            <div class="blogs-image">
+                                                <a href="./detail-blog.html" class="blogs-image-link">
+                                                    <img src="./assets/images/blogs3.jpg" alt="" loading="lazy">
+                                                </a>
+                                            </div>
+                                            <div class="blogs-content">
+                                                <div class="blogs-content__inner">
+                                                    <h3 class="blogs-content__title">
+                                                        <a href="./detail-blog.html">
+                                                            Eat yourself skinny
+                                                        </a>
+                                                    </h3>
+                                                    <div class="blogs-content__excerpt">
+                                                        Turpis massa tincidunt dui ut ornare lectus sit amet. Hendrerit gravida rutrum quisque non tellus orci ac auctor. Nibh…
+                                                    </div>
+                                                    <div class="blogs-content__more-wrap">
+                                                        <a href="./detail-blog.html" class="button blogs-btn-more">
+                                                            <span>Explore more</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="blogs-item">
+                                        <div class="blogs-item__inner">
+                                            <div class="blogs-image">
+                                                <a href="./detail-blog.html" class="blogs-image-link">
+                                                    <img src="./assets/images/blogs4.jpg" alt="" loading="lazy">
+                                                </a>
+                                            </div>
+                                            <div class="blogs-content">
+                                                <div class="blogs-content__inner">
+                                                    <h3 class="blogs-content__title">
+                                                        <a href="./detail-blog.html">
+                                                            Eat yourself skinny
+                                                        </a>
+                                                    </h3>
+                                                    <div class="blogs-content__excerpt">
+                                                        Turpis massa tincidunt dui ut ornare lectus sit amet. Hendrerit gravida rutrum quisque non tellus orci ac auctor. Nibh…
+                                                    </div>
+                                                    <div class="blogs-content__more-wrap">
+                                                        <a href="./detail-blog.html" class="button blogs-btn-more">
+                                                            <span>Explore more</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="subscribe">
+                <div class="subscribe-wrap">
+                    <div class="heading-title">
+                        <div class="sectitle">
+                            <h2>Get special offers from us</h2>
+                        </div>
+                    </div>
+                    <div class="subscribe-form-layout">
+                        <form action="" class="subscribe-form">
+                            <div class="subscribe-form__fields">
+                                <input type="email" name="email" id="email" placeholder="Enter your email">
+                            </div>
+                            <button type="submit" class="subscribe-form__submit">
+                                <span>Subscribe</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-top tb-space">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-md-3 order-1 order-md-0">
+                            <div class="footer-column">
+                                <div class="footer-title">
+                                    Company links
+                                </div>
+                                <ul class="footer-list">
+                                    <li class="footer-list__item">
+                                        <a href="./about.html" class="footer-list__link">
+                                            About us
+                                        </a>
+                                    </li>
+                                    <li class="footer-list__item">
+                                        <a href="" class="footer-list__link">
+                                            shop
+                                        </a>
+                                    </li>
+                                    <li class="footer-list__item">
+                                        <a href="" class="footer-list__link">
+                                            Policy & privacy
+                                        </a>
+                                    </li>
+                                    <li class="footer-list__item">
+                                        <a href="./contact.html" class="footer-list__link">
+                                            Contact
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4 order-0 order-md-1">
+                            <div class="footer-column">
+                                <div class="footer-logo">
+                                    <img src="./assets/images/logo.svg" alt="">
+                                </div>
+                                <div class="footer-column-text">
+                                    <p>Enjoy our seasonal menu and experience the beauty of naturalness</p>
+                                </div>
+                                <hr class="divider">
+                                <div class="footer-social">
+                                    <span class="item">
+                                        <a href="">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                    </span>
+                                    <span class="item">
+                                        <a href="">
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </a>
+                                    </span>
+                                    <span class="item">
+                                        <a href="">
+                                            <i class="fa-brands fa-youtube"></i>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 order-2 order-md-2">
+                            <div class="footer-column">
+                                <div class="footer-title">
+                                    Categories
+                                </div>
+                                <ul class="footer-list">
+                                    <li class="footer-list__item">
+                                        <a href="" class="footer-list__link">
+                                            Menu
+                                        </a>
+                                    </li>
+                                    <li class="footer-list__item">
+                                        <a href="" class="footer-list__link">
+                                            Drinks
+                                        </a>
+                                    </li>
+                                    <li class="footer-list__item">
+                                        <a href="" class="footer-list__link">
+                                            main course
+                                        </a>
+                                    </li>
+                                    <li class="footer-list__item">
+                                        <a href="" class="footer-list__link">
+                                            Desserts
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <p>Copyright 2023 © LA-STUDIO. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+    <script src="./assets/bootstrap/js/bootstrap.min.js "></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.1/swiper-bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js "></script>
+
+    <script src="./assets/js/style.js "></script>
+    <script src="./assets/js/slide.js "></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
